@@ -1,5 +1,5 @@
 # ota-server
-Very simple HTTPS server that can easily serve Over-The-Air firmware for ESP devices 
+Very simple HTTPS server that can easily serve firmware Over-The-Air for ESP devices 
 
 ## Quick start
 * Check config.py
