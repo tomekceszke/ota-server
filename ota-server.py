@@ -17,7 +17,6 @@ def start_ota_server(web_dir, cert_dir, server_ip, server_port):
     server_key_file = os.path.join(cert_dir, SERVER_KEY_FILE_NAME)
 
     httpd = HTTPServer((server_ip, server_port), OtaRequestHandler)
-
     httpd.socket = ssl.wrap_socket(httpd.socket, keyfile=server_key_file, certfile=ca_cert_file, server_side=True)
     os.chdir(web_dir)
     print("OTA Server is listening on port", OTA_SERVER_PORT)
