@@ -9,4 +9,4 @@ Very simple HTTPS server that can easily serve firmware Over-The-Air for ESP dev
 
 ## Notes
 * CN is important - must be the same as your server IP or domain
-* To avoid infinitive downloads (e.g. after ESP restart) - call file with DELETE method - its name will be renamed to the xxx.old
+* To avoid infinitive downloads (e.g. after ESP restart) - after upgrade call file with DELETE method - its name will be renamed to the xxx.old
